@@ -1,3 +1,4 @@
+// import { GlobalStyle } from './GlobalStyle/GlobalStyle';
 import { Layout } from './Layout/Layout.styled';
 
 import { Profile } from './Profile/Profile';
@@ -7,7 +8,7 @@ import { TransactionHistory } from 'components/TransactionHistory/TransactionHis
 import { friends, transactions, user, statistics } from '../data/index';
 export const App = () => {
   return (
-    <div
+    <Layout
       style={{
         display: 'flex',
         flexDirection: 'column',
@@ -21,6 +22,7 @@ export const App = () => {
       <Statistics stats={statistics} />
       <Friends friends={friends} />
       <TransactionHistory transactions={transactions} />
-    </div>
+      {/* <GlobalStyle /> */}
+    </Layout>
   );
 };

@@ -1,15 +1,23 @@
+import {
+  StatisticsContainer,
+  StatisticsTitle,
+  StatisticsListItem,
+  StatisticsList,
+} from './Statistics.styled';
 import { StatisticsItem } from '../StatisticsItem/StatisticsItem';
 export const Statistics = ({ stats }) => {
   return (
     <>
-      <h2>Statistics section</h2>/
-      <ul>
-        {stats.map(stat => (
-          <li key={stat.id}>
-            <StatisticsItem stat={stat} />
-          </li>
-        ))}
-      </ul>
+      <StatisticsContainer>
+        <StatisticsTitle>Upload stats</StatisticsTitle>
+        <StatisticsList>
+          {stats.map(stat => (
+            <StatisticsListItem key={stat.id}>
+              <StatisticsItem stat={stat} />
+            </StatisticsListItem>
+          ))}
+        </StatisticsList>
+      </StatisticsContainer>
     </>
   );
 };

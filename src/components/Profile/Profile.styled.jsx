@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 
 export const ListProfile = styled.div`
+  max-width: 542px;
   margin: 0 auto;
   background-color: #fff;
   box-shadow: 0px 1px 3px rgb(0 0 0 / 12%), 0px 1px 1px rgb(0 0 0 / 14%),
@@ -33,6 +34,8 @@ export const ProfileStats = styled.ul`
   background-color: ghostwhite;
   border-top: 1px solid lightgrey;
   margin: 0;
+  font-size: 24px;
+  line-height: 30px;
 `;
 export const ProfileStatsItem = styled.li`
   display: flex;
