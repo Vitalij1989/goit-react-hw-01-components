@@ -5,11 +5,11 @@ import {
   StatisticsList,
 } from './Statistics.styled';
 import { StatisticsItem } from '../StatisticsItem/StatisticsItem';
-export const Statistics = ({ stats }) => {
+export const Statistics = ({ title, stats }) => {
   return (
     <>
       <StatisticsContainer>
-        <StatisticsTitle>Upload stats</StatisticsTitle>
+        <StatisticsTitle>{title}</StatisticsTitle>
         <StatisticsList>
           {stats.map(stat => (
             <StatisticsListItem key={stat.id}>
