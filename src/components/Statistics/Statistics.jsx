@@ -1,4 +1,5 @@
 import {
+  StatisticsMainTitle,
   StatisticsContainer,
   StatisticsTitle,
   StatisticsListItem,
@@ -8,8 +9,9 @@ import { StatisticsItem } from '../StatisticsItem/StatisticsItem';
 export const Statistics = ({ title, stats }) => {
   return (
     <>
+      <StatisticsMainTitle>Statistics section</StatisticsMainTitle>
       <StatisticsContainer>
-        <StatisticsTitle>{title}</StatisticsTitle>
+        {<StatisticsTitle>Upload stats</StatisticsTitle>}
         <StatisticsList>
           {stats.map(stat => (
             <StatisticsListItem key={stat.id}>

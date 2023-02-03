@@ -1,5 +1,12 @@
 import styled from 'styled-components';
 
+export const StatisticsMainTitle = styled.h2`
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 40px;
+  text-align: center;
+`;
+
 export const StatisticsContainer = styled.section`
   margin: 0 auto;
   width: 542px;
@@ -10,7 +17,8 @@ export const StatisticsContainer = styled.section`
 `;
 
 export const StatisticsTitle = styled.h2`
-  padding: 30px;
+  padding: 0;
+  font-size: 30px;
   color: grey;
   text-align: center;
   text-transform: uppercase;
