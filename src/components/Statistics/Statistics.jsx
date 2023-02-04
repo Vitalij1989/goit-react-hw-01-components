@@ -11,7 +11,7 @@ export const Statistics = ({ title, stats }) => {
     <>
       <StatisticsMainTitle>Statistics section</StatisticsMainTitle>
       <StatisticsContainer>
-        {<StatisticsTitle>Upload stats</StatisticsTitle>}
+        {title && <StatisticsTitle>{title}</StatisticsTitle>}
         <StatisticsList>
           {stats.map(stat => (
             <StatisticsListItem key={stat.id}>
